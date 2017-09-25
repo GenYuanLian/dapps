@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>test</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button block (click)="click()">请求数据</button>
+  {{'abcdEFG12多云34闫小军abc多雲'|conversion}}
+  <page-select-pic [max]="4"></page-select-pic>
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Daenerys Targaryen</ion-label>
+      <ion-checkbox color="dark"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Sansa Stark</ion-label>
+      <ion-checkbox color="danger" checked="true"></ion-checkbox>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>Cersei Lannister</ion-label>
+      <ion-checkbox color="energized" color="dark"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Stannis Baratheon</ion-label>
+      <ion-checkbox color="royal" checked="true"></ion-checkbox>
+    </ion-item>
+
+  </ion-list>
+  <ion-fab right bottom>
+    <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+    <ion-fab-list side="left">
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

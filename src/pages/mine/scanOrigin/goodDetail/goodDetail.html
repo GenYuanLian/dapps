@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>商品详情</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-color">
+
+  <ion-label style="margin-left: 10px">产品详情</ion-label>
+  <ion-list>
+    <ion-item>
+      产品名称
+      <ion-note item-right>
+       {{Name}}
+      </ion-note>
+    </ion-item>
+
+
+    <ion-item>
+      产品描述
+      <ion-note item-right>
+        {{ProductDes}}
+      </ion-note>
+    </ion-item>
+
+    <ion-item>
+      产品批次
+      <ion-note item-right>
+        {{bathNote}}
+      </ion-note>
+    </ion-item>
+
+    <ion-item>
+      生产日期
+      <ion-note item-right>
+        {{ProductionDate}}
+      </ion-note>
+    </ion-item>
+
+    <ion-item>
+      保质期
+      <ion-note item-right>
+        {{Warrant}}个月
+      </ion-note>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-label style="margin-left: 10px">出入库信息</ion-label>
+    <ion-list>
+      <ion-item *ngFor="let record of data0Deal">
+        <div>
+          <div id="content_left">{{record.warehouseName}}</div>
+          <div id="content_middle">{{record.state}}</div>
+        </div>
+        <div id="content_right">{{record.date}}</div>
+      </ion-item>
+    </ion-list>
+
+
+  <ion-label style="margin-left: 10px">运输轨迹</ion-label>
+    <div id="map" #map></div>
+
+  <ion-label style="margin-left: 10px">温湿度走势</ion-label>
+    <div #tempChart class="div-charts"></div>
+
+</ion-content>
+

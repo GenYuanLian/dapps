@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>阳光食采直通车</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <div *ngFor="let good of schoolArr">
+      <ion-list-header style="border: none;padding-left: 0">
+        {{good.date}}
+      </ion-list-header>
+     <!-- <ion-item-group *ngFor="let item of good.schoolContent">
+        <ion-item-divider color="light">{{item.goodType}}</ion-item-divider>
+        <ion-item *ngFor="let mm of item.goodList"><span class="list-item-middle">{{mm.goodName}}</span><button ion-button clear style="float: right" (click)="showDetail(mm.goodId)">查看</button></ion-item>
+      </ion-item-group>-->
+      <ion-item *ngFor="let mm of good.goodList">
+        <span class="list-item-middle">{{mm.goodName}}</span>
+        <button ion-button clear style="float: right" (click)="showDetail(mm.goodId)">查看</button>
+      </ion-item>
+    </div>
+    <div class="no-info" *ngIf="schoolArr.length == 0">
+      该仓库没有食采信息
+    </div>
+  </ion-list>
+</ion-content>

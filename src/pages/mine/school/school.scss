@@ -1,0 +1,15 @@
+page-school{
+  .bg-color{
+    background-color: #efeeee;
+  }
+  ion-select {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    min-width: 55%;
+  }
+  .item-bg{
+    background-color: #2c2c2c ;
+  }
+}

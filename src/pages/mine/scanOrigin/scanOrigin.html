@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>商品列表</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-color">
+
+  <ion-item-group *ngFor="let item of goodList">
+    <ion-card (click)="goodDetail(item.goodsnumber,item.ProductName,item.bathNote,item.Warrant,item.ProductionDate,item.ProductDes,item.ProductStatus)">
+      <ion-item>
+        <h2>{{item.ProductName}}</h2>
+        <p>{{item.ProductDes}}</p>
+        <p>{{item.Time}}</p>
+      </ion-item>
+
+      <img class="card-img" src="{{item.picture[0]}}" />
+
+      <ion-card-content>
+        <p>{{item.Storag}}</p>
+      </ion-card-content>
+
+    </ion-card>
+  </ion-item-group>
+
+
+
+
+
+
+
+</ion-content>
+
+
+
+
+
+

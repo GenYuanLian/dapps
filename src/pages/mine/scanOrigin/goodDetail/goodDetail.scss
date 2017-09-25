@@ -1,0 +1,50 @@
+page-goodDetail {
+  .bg-color{
+    background-color: #F4F4F7;
+  }
+
+  #map {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height : 200px;
+    display: block;
+    overflow: hidden;
+    font-family: "微软雅黑";
+    border-radius: 5px;
+  }
+
+  .div-charts {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: block;
+    height: 200px;
+    width:100%;
+    font-family: "微软雅黑";
+  }
+  #content_left{
+    height:30px;
+    width:50%;
+    float:left;
+    /*border:1px solid black;*/
+  }
+  #content_middle{
+    height:30px;
+    float:right;
+    /*border:1px solid #900;*/
+  }
+  #content_right{
+    height:30px;
+    width:100%;
+    float:left;
+  }
+
+
+  .scroll {
+    height:100%;
+  }
+
+}

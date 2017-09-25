@@ -1,0 +1,30 @@
+page-bullet{
+  .bg-color{
+    background-color: #efeeee;
+  }
+  .bullet-bg{
+    min-height: 140px;background-color:grey;padding: 0;color: #fff;
+  }
+  .bullet-flex{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-ios.item-block .item-inner{
+    padding-right: 0;
+  }
+  .bullet-icon{
+    font-size: 2.2rem;
+  }
+  .bullet-remain{
+    margin-top: 6px;
+  }
+  .bullet-money{
+    margin-top: 6px;
+    font-size:1rem
+  }
+  .bullet-label{
+    margin-left: 2%;
+  }
+}

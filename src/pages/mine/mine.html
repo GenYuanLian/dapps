@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>个人中心</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-color">
+  <ion-list>
+    <ion-item (click)="edit()">
+      <ion-avatar item-left (click)="viewAvatar($event)">
+        <img src="{{avatarPath}}">
+      </ion-avatar>
+      <h2>{{userInfo?.name}}</h2>
+      <p>{{userInfo?.description}}</p>
+      <ion-icon name='ios-arrow-forward' item-right></ion-icon>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item (click)="collect()">
+      <ion-icon name="heart" item-left  color="danger"></ion-icon>
+      个人收藏
+      <ion-icon name='ios-arrow-forward' item-right></ion-icon>
+    </ion-item>
+    <ion-item (click)="card()">
+      <ion-icon name="card" item-left  color="dark"></ion-icon>
+      数字钱包
+      <ion-icon name='ios-arrow-forward' item-right></ion-icon>
+    </ion-item>
+    <ion-item (click)="scanOrigin()">
+      <ion-icon name="eye" item-left  color="secondary"></ion-icon>
+      溯源足迹
+      <ion-icon name='ios-arrow-forward' item-right></ion-icon>
+    </ion-item>
+    <ion-item (click)="school()">
+      <ion-icon name="cloud-outline" item-left  color="dark"></ion-icon>
+      关爱校园
+      <ion-icon name='ios-arrow-forward' item-right></ion-icon>
+    </ion-item>
+    <ion-item (click)="scanQR()">
+      <ion-icon name="qr-scanner" item-left  color="primary"></ion-icon>
+      一键扫一扫
+    </ion-item>
+    <ion-item (click)="setting()">
+      <ion-icon name="settings" item-left color="dark"></ion-icon>
+      设置
+      <ion-icon name='ios-arrow-forward' item-right></ion-icon>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+   <!-- <ion-item (click)="exitSoftware()" hideWhen="ios">
+	  <ion-icon name="log-out" item-left color="danger"></ion-icon>
+      退出软件
+    </ion-item>-->
+    <ion-item (click)="loginOut()">
+      <ion-icon name="log-in" item-left color="danger"></ion-icon>
+      注销
+    </ion-item>
+  </ion-list>
+</ion-content>

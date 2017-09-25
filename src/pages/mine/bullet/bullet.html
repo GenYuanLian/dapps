@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>数字钱包</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="bg-color">
+  <ion-list style="margin-bottom: 0">
+    <ion-item class="bullet-bg">
+      <div class="bullet-flex">
+        <ion-icon name="logo-yen" color="light" class="bullet-icon"></ion-icon>
+        <div class="bullet-remain">余额</div>
+        <div class="bullet-money">{{coin}}根源票</div>
+      </div>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-label class="bullet-label">根源票服务</ion-label>
+    <ion-item (click)="redPackage()">
+      <ion-icon name="water" item-left  color="danger"></ion-icon>
+      新人红包
+      <ion-icon name='ios-arrow-forward' item-right></ion-icon>
+    </ion-item>
+    <ion-item (click)="coinMarket()">
+      <ion-icon name="cart" item-left  color="secondary"></ion-icon>
+      代币商城
+      <ion-icon name='ios-arrow-forward' item-right></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

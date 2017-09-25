@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>阳光菜单</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="bg-color card-background-page">
+  <div *ngFor="let menu of menuArr">
+      <ion-card>
+        <ion-card-header class="menu-header">
+       <!--   <ion-icon class="menu-icon" name="list-box" color="dark"></ion-icon>-->
+          {{menu.weekday}}
+        </ion-card-header>
+        <ion-card-content>
+            <ion-label class="menu-label">早餐</ion-label>
+            <ion-item class="menu-item">
+              {{menu.breakfast}}
+            </ion-item>
+            <ion-label class="menu-label">加餐</ion-label>
+            <ion-item class="menu-item">
+              {{menu.adddish}}
+            </ion-item>
+            <ion-label class="menu-label">午餐</ion-label>
+            <ion-item class="menu-item">
+              {{menu.lunch}}
+            </ion-item>
+          <ion-label class="menu-label">点心</ion-label>
+          <ion-item class="menu-item">
+            {{menu.pastry}}
+          </ion-item>
+          <ion-label class="menu-label">晚餐</ion-label>
+          <ion-item class="menu-item">
+            {{menu.dinner}}
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+  </div>
+ <!-- <ion-row class="table-bg">
+    <ion-col>
+      <strong style="color: #fff">日期</strong>
+    </ion-col>
+    <ion-col class="center-border">
+      <strong style="color: #fff">早餐</strong>
+    </ion-col>
+    <ion-col>
+      <strong style="color: #fff">加餐</strong>
+    </ion-col>
+  </ion-row>
+  <div *ngFor="let menu of menuArr">
+    <ion-row class="header">
+      <ion-col>
+        <span class="table-item">{{menu.week}}</span>
+      </ion-col>
+      <ion-col class="center-border">
+        <span *ngFor="let food of menu.staplefood">{{food}}</span>
+      </ion-col>
+      <ion-col>
+        <span *ngFor="let dish of menu.dish">{{dish}}</span>
+      </ion-col>
+    </ion-row>
+  </div>-->
+</ion-content>
+

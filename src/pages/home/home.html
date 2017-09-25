@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>真否</ion-title>
+    <ion-icon ios="ios-expand" md="md-expand" (click)="scan()"></ion-icon>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-item class="school">
+    <ion-label>选择学校</ion-label>
+    <ion-select [(ngModel)]="select" multiple="false" (ngModelChange)="getSelectedSchool()">
+      <ion-option *ngFor="let school of schoolName" value="{{school.id}}">{{school.enterpriseName}}</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-list>
+    <div *ngFor="let good of schoolArr">
+      <ion-list-header style="border: none;padding-left: 0">
+        {{good.date}}
+      </ion-list-header>
+      <ion-item-group *ngFor="let item of good.schoolContent">
+        <ion-item-divider color="light">{{item.goodType}}</ion-item-divider>
+        <ion-item *ngFor="let mm of item.goodList"><span class="list-item-middle">{{mm.goodId}}</span><button ion-button clear style="float: right" (click)="showDetail(mm.goodId)">查看</button></ion-item>
+      </ion-item-group>
+    </div>
+    <!--<ion-list-header style="border: none;padding-left: 0">
+      2017-05-20
+    </ion-list-header>
+    <ion-item-group>
+      <ion-item-divider color="light">二箱奶</ion-item-divider>
+      <ion-item><span class="list-item-middle">123456</span><button ion-button clear style="float: right" (click)="showDetail('123456')">查看</button></ion-item>
+      <ion-item><span class="list-item-middle">016757</span><button ion-button clear style="float: right">查看</button></ion-item>
+    </ion-item-group>
+    <ion-item-group>
+      <ion-item-divider color="light">三袋大米</ion-item-divider>
+      <ion-item><span class="list-item-middle">016757</span><button ion-button clear style="float: right">查看</button></ion-item>
+      <ion-item><span class="list-item-middle">016757</span><button ion-button clear style="float: right">查看</button></ion-item>
+      <ion-item><span class="list-item-middle">016757</span><button ion-button clear style="float: right">查看</button></ion-item>
+    </ion-item-group>-->
+  </ion-list>
+</ion-content>

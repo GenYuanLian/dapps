@@ -1,0 +1,14 @@
+page-school-collection{
+  .bg-color{
+    background-color: #efeeee;
+  }
+  .no-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    font-size: 1.4em;
+    color: #888888;
+  }
+}

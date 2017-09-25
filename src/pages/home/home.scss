@@ -1,0 +1,35 @@
+page-home {
+  .bg-color{
+    background-color: #efeeee;
+  }
+  .toolbar {
+    padding:0
+  }
+  .home-title {
+    display: inline-block;
+    width: 80%;
+    box-sizing:border-box;
+    vertical-align: top;
+  }
+/*  .home-title-right {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+  }*/
+  .toolbar-content{
+    display: flex;
+    align-items: center;
+  }
+  .icon{
+    position: absolute;
+    font-size: 1.8em;
+    right: 10%;
+    color: #ffffff;
+  }
+  .list-item-middle{
+    vertical-align: -webkit-baseline-middle;
+  }
+  .school{
+    padding: 0;
+  }
+}

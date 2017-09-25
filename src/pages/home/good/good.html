@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>商品详情</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-item class="good">
+    <ion-label>{{goodId}}</ion-label>
+  </ion-item>
+  <button ion-button (click)="toOrigin()">商品溯源</button>
+  <button ion-button color="secondary" (click)="toStatus()">商品状态</button>
+</ion-content>
+

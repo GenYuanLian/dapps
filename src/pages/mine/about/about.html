@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>关于真否</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="bg-color">
+  <ion-list></ion-list>
+  <ion-list>
+    <ion-item>
+      版本号({{versionNo}})
+    </ion-item>
+    <!--<ion-item (click)="updateLog()">
+      更新日志
+    </ion-item>-->
+    <ion-item (click)="features()">
+      功能介绍
+      <ion-icon name='ios-arrow-forward' item-right></ion-icon>
+    </ion-item>
+   <!-- <ion-item (click)="feedBack()">
+      用户反馈
+    </ion-item>-->
+  </ion-list>
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>实名认证</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-label *ngIf="!isIdentify" style="color: red">请正确填写您的身份证号</ion-label>
+  <ion-label *ngIf="isIdentify" >认证信息:（请输入身份证号或军官证号）</ion-label>
+  <form [formGroup]="idForm">
+    <ion-input [(ngModel)]="idNumber" (input)="inputChange()" type="text" formControlName="idNumber" placeholder="身份证号" clearInput></ion-input>
+  <!--<ion-textarea style="overflow-y:hidden; height:50px;"
+                onpropertychange="this.style.height=this.scrollHeight + 'px'"
+                oninput="this.style.height=this.scrollHeight + 'px'" [(ngModel)]="idCard"
+                placeholder="请填写问题描述">
+  </ion-textarea>-->
+  <!--  <div>
+      <page-select-pic [(fileObjList)]="fileObjList"></page-select-pic>
+    </div>-->
+  </form>
+  <div>
+    <button ion-button block (click)="uploadIDCard()" [disabled]="inputDisabled">上传</button>
+  </div>
+</ion-content>
+
+

@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>个人信息</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="openModal()">
+        <ion-icon name="ios-create-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content class="bg-color">
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-left (click)="viewAvatar($event)">
+        <img [src]="avatarPath">
+      </ion-avatar>
+      <h2>{{userInfo.name}}</h2>
+      <p>{{userInfo.description}}</p>
+      <i class="icon ion-chevron-right icon-accessory"></i>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="contact" item-left  color="dark"></ion-icon>
+      用户名：{{userInfo.username}}
+    </ion-item>
+    <ion-item>
+      <ion-icon name="call" item-left  color="primary"></ion-icon>
+      手机号码：{{userInfo.phone}}
+    </ion-item>
+    <ion-item>
+      <ion-icon name="at" item-left  color="secondary"></ion-icon>
+      邮箱地址：{{userInfo.email}}
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="card" item-left  color="dark"></ion-icon>
+      代币账号:{{userInfo.bcAddress}}</ion-item>
+  </ion-list>
+</ion-content>

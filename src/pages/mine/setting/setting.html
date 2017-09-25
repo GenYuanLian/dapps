@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>系统设置</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="bg-color">
+  <ion-list></ion-list>
+  <ion-list>
+    <ion-item (click)="userSafe()">
+      <ion-icon name="hammer" item-left  color="primary"></ion-icon>
+      账户安全
+      <ion-icon name='ios-arrow-forward' item-right></ion-icon>
+    </ion-item>
+    <ion-item (click)="nameIdentification()">
+      <ion-icon name="contact" item-left  color="danger"></ion-icon>
+      实名认证
+      <ion-icon name='ios-arrow-forward' item-right></ion-icon>
+    </ion-item>
+    <ion-item (click)="about()">
+      <ion-icon name="information-circle" item-left  color="secondary"></ion-icon>
+      关于真否
+      <ion-icon name='ios-arrow-forward' item-right></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
