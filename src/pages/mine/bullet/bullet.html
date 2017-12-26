@@ -1,28 +1,44 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>数字钱包</ion-title>
+    <ion-title>代币交易</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content class="bg-color">
+<ion-content class="bg-color" >
   <ion-list style="margin-bottom: 0">
-    <ion-item class="bullet-bg">
-      <div class="bullet-flex">
-        <ion-icon name="logo-yen" color="light" class="bullet-icon"></ion-icon>
-        <div class="bullet-remain">余额</div>
-        <div class="bullet-money">{{coin}}根源票</div>
+    <ion-item class="bullet-bg" style="background-color: #f53d3d">
+      <div class="bullet-flex" >
+        <!--<ion-icon name="logo-yen" color="light" class="bullet-icon"></ion-icon>-->
+        <div class="bullet-remain" style="font-size:large">余额:</div>
+        <div class="bullet-money "style="font-size: medium">{{coin}} 根源票</div>
+        <div class="bullet-money" style="font-size: medium">{{RMB}} <ion-icon name="logo-yen" color="light" class="bullet-icon" style="font-size: medium"></ion-icon></div>
       </div>
     </ion-item>
   </ion-list>
   <ion-list>
-    <ion-label class="bullet-label">根源票服务</ion-label>
-    <ion-item (click)="redPackage()">
-      <ion-icon name="water" item-left  color="danger"></ion-icon>
-      新人红包
+    <ion-label class="item-text-wrap" style="font-weight: bolder">　代币账号:<ion-item style="font-size: x-small;font-weight: bolder;background-color: #e9e9e9">{{userInfo.bcAddress}}</ion-item></ion-label>
+    <!--<ion-item (click)="redPackage()">-->
+      <!--<ion-icon name="water" item-left  style="color: aqua"></ion-icon>-->
+      <!--新人红包-->
+      <!--<ion-icon name='ios-arrow-forward' item-right></ion-icon>-->
+    <!--</ion-item>-->
+    <ion-item (click)="payment()">
+      <ion-icon name="logo-bitcoin" item-left  color="secondary"></ion-icon>
+      付款
       <ion-icon name='ios-arrow-forward' item-right></ion-icon>
     </ion-item>
-    <ion-item (click)="coinMarket()">
-      <ion-icon name="cart" item-left  color="secondary"></ion-icon>
-      代币商城
+    <ion-item (click)="receipt()">
+      <ion-icon name="logo-bitcoin" item-left  color="danger"></ion-icon>
+      收款
+      <ion-icon name='ios-arrow-forward' item-right></ion-icon>
+    </ion-item>
+    <ion-item (click)="QueryTransaction()">
+      <ion-icon name="ios-bookmark" item-left style="color: #0c60ee" ></ion-icon>
+      交易查询
+      <ion-icon name='ios-arrow-forward' item-right></ion-icon>
+    </ion-item>
+    <ion-item (click)="TransactionRecord()">
+      <ion-icon name="paper" item-left  ></ion-icon>
+      交易记录浏览
       <ion-icon name='ios-arrow-forward' item-right></ion-icon>
     </ion-item>
   </ion-list>
