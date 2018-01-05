@@ -19,7 +19,7 @@
     </div>-->
   </form>
   <div>
-    <button ion-button block (click)="uploadIDCard()" [disabled]="inputDisabled">上传</button>
+    <button ion-button block (click)="uploadIDCard()" [disabled]="inputDisabled||!idForm.controls.idNumber.valid">上传</button>
   </div>
 </ion-content>
 
