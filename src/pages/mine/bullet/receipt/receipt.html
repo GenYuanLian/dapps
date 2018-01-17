@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>收款</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content style="background-color: #e9e9e9">
+  <form [formGroup]="receiptForm" (ngSubmit)="sentAddress(receiptForm.value)">
+    <ion-list></ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-label>付款账户</ion-label>
+        <ion-input type="text" formControlName="tel" clearInput></ion-input>
+      </ion-item>
+      <div *ngIf="!receiptForm.controls.tel.valid && receiptForm.controls.tel.touched" class="validation-failed"> 请输入正确钱包地址</div>
+    </ion-list>
+    <div padding-horizontal>
+      <button ion-button block type="submit" [disabled]="!receiptForm.valid">提　交</button>
+    </div>
+  </form>
+</ion-content>
