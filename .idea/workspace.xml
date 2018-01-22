@@ -136,46 +136,10 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="dapps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapps" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapps" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapps" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="mine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapps" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="mine" type="462c0819:PsiDirectoryNode" />
-              <item name="bullet" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -187,7 +151,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/SourceBlockChain" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -333,7 +297,8 @@
       <workItem from="1515154044456" duration="480000" />
       <workItem from="1515546797891" duration="429000" />
       <workItem from="1515724210814" duration="113000" />
-      <workItem from="1516157471263" duration="32000" />
+      <workItem from="1516157471263" duration="151000" />
+      <workItem from="1516591119015" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="bullet">
       <created>1514269737948</created>
@@ -363,11 +328,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515724293356</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <created>1516157599998</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1516157599998</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231815000" />
+    <option name="totallyTimeSpent" value="231946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
