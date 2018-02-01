@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      交易详情
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text>关闭</span>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content style="background-color: #e9e9e9">
+  <ion-list></ion-list>
+  <ion-list>
+    <ion-item  style="font-weight: bolder">
+      交易金额
+      <ion-note item-right style="color: black;font-weight: normal">
+        {{tradingmes.number}}<ion-icon name="logo-bitcoin" class="bullet-icon" style="font-size: medium"></ion-icon>
+      </ion-note>
+    </ion-item>
+    <ion-item  style="font-weight: bolder">
+      交易时间
+      <ion-note item-right style="color: black;font-weight: normal">
+        {{tradingmes.time}}
+      </ion-note>
+    </ion-item>
+    <ion-list></ion-list>
+    <ion-item  style="font-weight: bolder">
+      付款账户
+    </ion-item>
+    <ion-item style="font-size: x-small;font-weight: bolder;">
+      {{tradingmes.from}}
+    </ion-item>
+    <ion-list></ion-list>
+    <ion-item  style="font-weight: bolder">
+      收款账户
+    </ion-item>
+    <ion-item style="font-size: x-small;font-weight: bolder;">
+      {{tradingmes.to}}
+    </ion-item>
+  </ion-list>
+</ion-content>
