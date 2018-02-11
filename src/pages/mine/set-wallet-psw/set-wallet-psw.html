@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>钱包密码设置</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="walletpasswordForm" (ngSubmit)="setpassword(walletpasswordForm.value)">
+    <ion-list>
+      <ion-item>
+        <ion-label>密　　码</ion-label>
+        <ion-input type="password" formControlName="password" clearInput></ion-input>
+      </ion-item>
+      <div *ngIf="!walletpasswordForm.controls.password.valid && walletpasswordForm.controls.password.touched" class="validation-failed"> 请输入密码</div>
+
+      <ion-item>
+        <ion-label>再次确认</ion-label>
+        <ion-input type="password" formControlName="repassword" clearInput></ion-input>
+      </ion-item>
+      <div *ngIf="walletpasswordForm.value.password!=walletpasswordForm.value.repassword&& walletpasswordForm.controls.repassword.touched" class="validation-failed">两次密码不一致</div>
+
+    </ion-list>
+    <div padding-horizontal>
+      <button ion-button block type="submit" [disabled]="!walletpasswordForm.valid||walletpasswordForm.value.password!=walletpasswordForm.value.repassword">确　认</button>
+    </div>
+  </form>
+</ion-content>
