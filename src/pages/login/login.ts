@@ -2,9 +2,7 @@ import {Component} from '@angular/core';
 import {ModalController, ViewController, Platform, AlertController,NavController,NavParams} from 'ionic-angular';
 import {Storage} from '@ionic/storage';
 import {FormBuilder, Validators} from '@angular/forms';
-
 import {LoginService} from './LoginService';
-
 import {FindPasswordPage} from './find-password/find-password';
 import {RegisterPage} from './register/register';
 import {UserInfo} from "../../model/UserInfo";
@@ -82,7 +80,8 @@ export class LoginPage {
           this.userInfo = userInfo;
           this.storage.set('UserInfo', userInfo);
           //this.viewCtrl.dismiss(userInfo);
-          this.navCtrl.push(MinePage);
+          let modal = this.modalCtrl.create(MinePage);
+          modal.present();
         }else {
           this.alertCtrl.create({
             title: '登录失败',
